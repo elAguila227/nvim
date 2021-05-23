@@ -2,7 +2,7 @@
 let mapleader = ' '
 
 noremap <leader>w :w<cr>
-noremap <leader>Q :q<cr>
+noremap <leader>Q :qa<cr>
 noremap <leader>q :BD<cr>
 noremap <leader>% :source $MYVIMRC<cr>
 

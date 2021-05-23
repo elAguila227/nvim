@@ -45,7 +45,12 @@ let g:airline_powerline_fonts = 1
 " let g:airline#extensions#tabline#right_sep = ' '
 " let g:airline#extensions#tabline#right_alt_sep = ''
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:airline_theme='wal'
+
+if !empty(glob("$HOME/.cache/wal/"))
+    let g:airline_theme='wal'
+else
+    let g:airline_theme='onedark'
+endif
 
 " if !exists('g:airline_symbols')
 "     let g:airline_symbols = {}

@@ -25,6 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'brancj': 'release'}
     Plug 'uiiaoo/java-syntax.vim'
 
+    Plug 'joshdick/onedark.vim'
     Plug 'dylanaraps/wal.vim'
     Plug 'qpkorr/vim-bufkill'
     Plug 'LukeSmithxyz/vimling'
