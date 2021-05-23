@@ -1,13 +1,13 @@
 " REMAPS:
 let mapleader = ' '
 
-nnoremap <leader>w :w<cr>
-nnoremap <leader>Q :q<cr>
+noremap <leader>w :w<cr>
+noremap <leader>Q :q<cr>
 noremap <leader>q :BD<cr>
 noremap <leader>% :source $MYVIMRC<cr>
 
 " Enable spell checking
-map <leader>s :setlocal spell! spellang=en_us,es<CR>
+map <leader>s :setlocal spell! spellang=en_us<CR>
 
 :imap qq <Esc>
 

@@ -18,7 +18,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-repeat'
     Plug 'machakann/vim-highlightedyank'
     Plug 'jiangmiao/auto-pairs'
-    Plug 'LukeSmithxyz/vimling'
 
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
@@ -28,6 +27,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'dylanaraps/wal.vim'
     Plug 'qpkorr/vim-bufkill'
+    Plug 'LukeSmithxyz/vimling'
 call plug#end()
 
 " Automatically install missing plugins on startup

@@ -48,10 +48,7 @@ set mouse=a
 
 " EXIT:
 set confirm
-" autocmd BufWritePre * %s/\s+$//e
+autocmd BufWritePre * %s/\s+$//e
 
 " AUTO SOURCE init.vim:
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
-
-" RENDER R Markdown:
-autocmd FileType rmd map <F5> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"\|<space>R<space>--vanilla<enter>
