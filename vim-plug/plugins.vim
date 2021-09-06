@@ -22,7 +22,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
-    Plug 'neoclide/coc.nvim', {'brancj': 'release'}
+    " Plug 'neoclide/coc.nvim', {'brancj': 'release'}
     Plug 'uiiaoo/java-syntax.vim'
 
     Plug 'joshdick/onedark.vim'
