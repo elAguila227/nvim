@@ -7,7 +7,8 @@ noremap <leader>q :BD<cr>
 noremap <leader>% :source $MYVIMRC<cr>
 
 " Enable spell checking
-map <leader>s :setlocal spell! spellang=en_us<CR>
+map <leader>s :setlocal spell! spelllang=en<CR>
+map <leader>S :setlocal spell! spelllang=es<CR>
 
 :imap qq <Esc>
 

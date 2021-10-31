@@ -21,8 +21,11 @@ set pumheight=10
 set cursorline
 " set showtabline=2
 
-" COMENTS:
+" COMMENTS:
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" FILETYPE ASSOCIATION:
+autocmd BufRead,BufNewFile *.ens set filetype=asm
 
 set fillchars+=vert:\
 
@@ -43,7 +46,7 @@ set splitright
 " vertically center view when entering insert mode
 autocmd InsertEnter * norm zz
 
-" MOUSE SUPORT:
+" MOUSE SUPPORT:
 set mouse=a
 
 " EXIT:
