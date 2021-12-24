@@ -12,6 +12,11 @@ map <leader>S :setlocal spell! spelllang=es<CR>
 
 :imap qq <Esc>
 
+nnoremap <leader>a za
+nnoremap <leader>a za
+nnoremap <leader><leader>a zR
+nnoremap <leader><leader>A zM
+
 " INSERT LINE:
 nnoremap <silent><C-p> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><C-[> :set paste<CR>m`O<Esc>``:set nopaste<CR>

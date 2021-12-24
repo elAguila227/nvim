@@ -13,6 +13,7 @@ set noerrorbells
 set smartindent
 set number relativenumber
 set smartcase
+set ignorecase
 set incsearch
 set nohlsearch
 set showcmd
@@ -20,6 +21,11 @@ set showcmd
 set pumheight=10
 set cursorline
 " set showtabline=2
+
+" FOLDS:
+set foldmethod=syntax
+autocmd BufRead,BufNewFile *.java set foldmethod=marker foldmarker={,}
+
 
 " COMMENTS:
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
