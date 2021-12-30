@@ -13,7 +13,7 @@ map <leader>S :setlocal spell! spelllang=es<CR>
 :imap qq <Esc>
 
 nnoremap <leader>a za
-nnoremap <leader>a za
+nnoremap <leader>A zA
 nnoremap <leader><leader>a zR
 nnoremap <leader><leader>A zM
 

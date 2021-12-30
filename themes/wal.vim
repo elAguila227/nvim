@@ -8,5 +8,7 @@ hi LineNr ctermbg=NONE
 
 hi Folded ctermfg=1 guifg=1
 
+hi VertSplit ctermbg=NONE ctermfg=NONE cterm=NONE
+
 hi CursorLine term=underline cterm=underline ctermbg=NONE guibg=NONE ctermfg=NONE guifg=NONE
 hi CurlorLineNr term=underline cterm=underline
