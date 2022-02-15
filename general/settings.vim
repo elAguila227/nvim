@@ -34,7 +34,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " FILETYPE ASSOCIATION:
 autocmd BufRead,BufNewFile *.ens set filetype=asm
 
-set fillchars+=vert:\
+set fillchars+=vert:\|
 
 " FINDING FILES:
 set path+=**
