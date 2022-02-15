@@ -25,6 +25,7 @@ set cursorline
 " FOLDS:
 set foldmethod=syntax
 autocmd BufRead,BufNewFile *.java set foldmethod=marker foldmarker={,}
+set nofoldenable
 
 
 " COMMENTS:
