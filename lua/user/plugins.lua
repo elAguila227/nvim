@@ -47,7 +47,10 @@ return packer.startup(function(use)
     use "windwp/nvim-ts-autotag"
 
     use "LukeSmithxyz/vimling"
-    
+
+    -- toggleterm
+    use "akinsho/toggleterm.nvim"
+
     -- surround
     use "tpope/vim-surround"
 
@@ -61,7 +64,7 @@ return packer.startup(function(use)
 
     -- lualine
     use "nvim-lualine/lualine.nvim"
-    
+
     -- cmp plugins
     use "hrsh7th/nvim-cmp"                              -- The completion plugin
     use "hrsh7th/cmp-buffer"                            -- buffer completions
@@ -79,7 +82,7 @@ return packer.startup(function(use)
     use "williamboman/nvim-lsp-installer"               -- simple to use language server installer
 
     -- Colorschemes
-    use "dylanaraps/wal.vim"                            -- Pywal nvim colorscheme
+    -- use "dylanaraps/wal.vim"                            -- Pywal nvim colorscheme
     use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
 
     -- Treesitter

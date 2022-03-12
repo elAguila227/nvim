@@ -52,10 +52,13 @@ local location = {
 local progress = function()
     local current_line = vim.fn.line(".")
     local total_lines = vim.fn.line("$")
-    local chars = { "__", "▁▁", "▂▂", "▃▃", "▄▄", "▅▅", "▆▆", "▇▇", "██" }
+    -- local chars = { "_", "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" }
+    local chars = { "ﯺ", "ﯸ", "ﯹ" }
+    -- local chars = { "" }
     local line_ratio = current_line / total_lines
     local index = math.ceil(line_ratio * #chars)
-    return chars[index]
+    -- return chars[index]
+    return string.format("%d", line_ratio*100) .. "%% " .. chars[index]
 end
 
 local spaces = function()
@@ -77,8 +80,8 @@ lualine.setup({
         lualine_c = {},
         -- lualine_x = { "encoding", "fileformat", "filetype" },
         lualine_x = { diff, spaces, "encoding", filetype },
-        lualine_y = { location },
-        lualine_z = { progress },
+        lualine_y = {},
+        lualine_z = { location, progress },
     },
     inactive_sections = {
         lualine_a = {},
