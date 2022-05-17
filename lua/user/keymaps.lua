@@ -47,6 +47,11 @@ keymap("n", "cV", 'o<ESC>"+p', opts)
 keymap("n", "cp", '"+y', opts)
 keymap("n", "cP", '"+Y', opts)
 
+keymap("v", "cv", '"+p', opts)
+keymap("v", "cV", 'o<ESC>"+p', opts)
+keymap("v", "cp", '"+y', opts)
+keymap("v", "cP", '"+Y', opts)
+
 -- Navigate buffers
 keymap("n", "<TAB>", ":bnext<CR>", opts)
 keymap("n", "<S-TAB>", ":bprevious<CR>", opts)

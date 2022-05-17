@@ -49,7 +49,9 @@ return packer.startup(function(use)
     use "LukeSmithxyz/vimling"
 
     -- toggleterm
-    use "akinsho/toggleterm.nvim"
+    use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
+        require("toggleterm").setup()
+    end}
 
     -- surround
     use "tpope/vim-surround"
@@ -59,7 +61,9 @@ return packer.startup(function(use)
     use "kyazdani42/nvim-web-devicons"                  -- icon support
 
     -- bufferline
-    use "akinsho/bufferline.nvim"
+    use {'akinsho/bufferline.nvim', tag = "v2.*",
+        requires = 'kyazdani42/nvim-web-devicons'
+    }
     use "moll/vim-bbye"                                 -- close buffer without closing window
 
     -- lualine
@@ -91,6 +95,7 @@ return packer.startup(function(use)
         run = ":TSUpdate",
     }
     use "JoosepAlviste/nvim-ts-context-commentstring"
+    use "nvim-treesitter/nvim-treesitter-angular"
 
     -- Git
     use "lewis6991/gitsigns.nvim"
