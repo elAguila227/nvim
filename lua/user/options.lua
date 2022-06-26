@@ -64,5 +64,6 @@ vim.cmd [[au BufRead,BufNewFile *.ens set filetype=asm]]                        
 vim.cmd [[au BufWritePre * %s/\s\+$//e]]                                        -- remove trailing spaces
 
 vim.cmd [[au Filetype rmd map <leader><leader>r :!Rscript -e "rmarkdown::render('%')"<CR>]]                                        -- remove trailing spaces
+vim.cmd [[au Filetype tex map <leader><leader>r :!pdflatex %<CR>]]
 
 -- vim.cmd [[autocmd InsertEnter * norm zz]]                                       -- centers cursor on screen when writing
