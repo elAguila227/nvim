@@ -16,7 +16,7 @@ local options = {
     ignorecase = true,
     smartcase = true,
     incsearch = true,
-    hlsearch = true,
+    hlsearch = false,
 
     wrap = false,
     scrolloff = 4,

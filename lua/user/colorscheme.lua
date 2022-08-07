@@ -9,8 +9,8 @@ end
 
 
 vim.cmd [[hi CursorLine term=underline cterm=underline gui=underline]]
-vim.cmd [[hi VertSplit cterm=NONE gui=NONE ]]
-vim.cmd [[hi StatusLineNC cterm=NONE gui=NONE ]]
+vim.cmd [[hi VertSplit cterm=NONE gui=NONE guibg=NONE ]]
+-- vim.cmd [[hi StatusLineNC cterm=NONE gui=NONE ]]
 
 -- vim.cmd [[hi Normal guibg=NONE ctermbg=NONE]]
 -- vim.cmd [[hi EndOfBuffer guibg=NONE ctermbg=NONE]]
